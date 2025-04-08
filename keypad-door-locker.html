@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keypad Door Locker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="keypad-door-locker.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">Tanish Gholam</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content Section -->
+  <section class="content-container">
+    <h1>IoT-Based Keypad Door Locker</h1>
+
+    <div class="image-gallery">
+      <img src="images/keypad1.jpg" alt="Keypad Setup">
+      <img src="images/keypad2.jpg" alt="Wiring and Arduino Uno">
+      <img src="images/keypad3.jpg" alt="Final Door Lock Mechanism">
+    </div>
+
+    <div class="description">
+      <p>
+        The <strong>Keypad Door Locker</strong> is a secure IoT-based access control system that uses a numeric keypad, Arduino Uno, and an LED display for enhanced functionality. It is designed to restrict unauthorized access and offer a smart solution for home and office security.
+      </p>
+
+      <h3>🔧 Components Used:</h3>
+      <ul>
+        <li>Arduino Uno</li>
+        <li>4x4 Matrix Keypad</li>
+        <li>16x2 LED Display</li>
+        <li>Buzzer</li>
+        <li>Servo Motor (for locking mechanism)</li>
+        <li>Wires and Breadboard</li>
+        <li>Power Source</li>
+      </ul>
+
+      <h3>💡 Working:</h3>
+      <p>
+        When the user inputs a password through the keypad, it is checked against a preset value stored in the Arduino. If the password is correct, the servo motor rotates to unlock the door. If the password is incorrect, the buzzer beeps to notify the user. The LCD displays messages such as "Enter Password", "Access Granted", or "Wrong Password".
+      </p>
+
+      <p>
+        This project demonstrates the integration of hardware components to build an effective real-world application. It's ideal for learning basic embedded systems, electronics, and security design.
+      </p>
+
+      <h3>📌 Applications:</h3>
+      <ul>
+        <li>Smart Home Security</li>
+        <li>Office Entry Systems</li>
+        <li>School Locker Systems</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

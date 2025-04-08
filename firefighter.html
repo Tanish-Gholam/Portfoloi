@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fire-Fighter Robot</title>
+  <link rel="stylesheet" href="firefighter.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">Tanish Gholam</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <video controls>
+      <source src="firefighter-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="image-gallery">
+    <img src="images/fire1.jpg" alt="Robot Side View">
+    <img src="images/fire2.jpg" alt="Robot Circuit">
+    <img src="images/fire3.jpg" alt="Robot on Field">
+  </section>
+
+  <!-- Information Section -->
+  <section class="info-section">
+    <h2>Fire-Fighter Robot Overview</h2>
+    <p>
+      The Fire-Fighter Robot is a prototype designed to simulate emergency response systems in fire-prone environments. It is equipped with basic sensors and components to detect and respond to simulated fire situations.
+    </p>
+    <h3>Components Used:</h3>
+    <ul>
+      <li><strong>Arduino Uno</strong> - Acts as the main controller to process inputs and control outputs.</li>
+      <li><strong>Flame Sensor</strong> - Detects presence of flame or fire.</li>
+      <li><strong>Motor Driver</strong> - Controls the movement of wheels based on Arduino signals.</li>
+      <li><strong>Wheels and Chassis</strong> - Provides mobility to the robot.</li>
+      <li><strong>Water Pump or Fan Module</strong> - Simulates fire extinguishing when flame is detected.</li>
+      <li><strong>Buzzer</strong> - Gives an alert signal upon fire detection.</li>
+    </ul>
+    <h3>Working:</h3>
+    <p>
+      When powered on, the robot constantly scans the area with the flame sensor. If a flame is detected, the robot moves toward the source and activates the extinguishing mechanism (e.g., fan or water pump). The buzzer also alerts the environment of the detected fire. This model, though in prototype form, reflects the concept of automated first-response systems.
+    </p>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #d3fdfb;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #00796b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+  }
+  
+  .nav-left {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+    color: #333;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      z-index: 2;
+      position: relative;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00796b;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-200%);
+      transition: transform 0.4s ease-in-out;
+      padding: 15px 0;
+      gap: 20px;
+      z-index: 1;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Content */
+  .content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .content-container h1 {
+    font-size: 30px;
+    color: #00796b;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  /* Images */
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Text Info */
+  .description p, .description ul {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .description h3 {
+    margin-top: 20px;
+    color: #00796b;
+  }
+  

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #d3fdfb;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #00796b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .nav-left {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a.active,
+  .nav-links li a:hover {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00796b;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-200%);
+      transition: transform 0.4s ease-in-out;
+      padding: 15px 0;
+      gap: 20px;
+      z-index: 1;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Login Section */
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00796b;
+  }
+  
+  .login-box label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-box button:hover {
+    background-color: #004d40;
+  }
+  
