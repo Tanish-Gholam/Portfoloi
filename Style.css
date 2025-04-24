@@ -359,21 +359,6 @@ span{
 .btn-primary{
     color:#007f73;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Skills-Section Code*/
 
 .skills h2{
@@ -586,6 +571,22 @@ span{
     background: #055a52;
 }
 
+.footer {
+    background-color: #055a52; /* dark greenish background */
+    color: #fff;
+  }
+  
+  .footer .social-icons a {
+    color: white; /* matching your primary color */
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #fff; /* on hover make it white */
+  }
+  
 
 
 
